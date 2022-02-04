@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="@color/input_color" android:orientation="vertical">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="0"
+            android:ems="10"
+            android:id="@+id/showNumber" android:gravity="right" android:paddingTop="20pt"
+            android:background="@color/input_color" android:textColor="@android:color/white" android:textSize="30sp"
+            android:layout_weight="1"/>
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button
+                    android:text="C"
+                    style="@style/btn_default_style"
+                    android:onClick="clearInput"
+                    android:id="@+id/btn_clear"/>
+            <Button
+                    android:text="+/-"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_sign"/>
+            <Button
+                    android:text="%"
+                    style="@style/btn_default_style"
+                    android:onClick="percentageEvent"
+                    android:id="@+id/btn_percentage"/>
+            <Button
+                    android:text="/"
+                    style="@style/btn_operation"
+                    android:onClick="operationEvent"
+                    android:id="@+id/btn_divide"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+
+                  android:layout_height="match_parent">
+            <Button
+                    android:text="7"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_7"/>
+            <Button
+                    android:text="8"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_8"/>
+            <Button
+                    android:text="9"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_9"/>
+            <Button
+                    android:text="*"
+                    style="@style/btn_operation"
+                    android:onClick="operationEvent"
+                    android:id="@+id/btn_multiple"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button
+                    android:text="4"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_4"/>
+            <Button
+                    android:text="5"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_5"/>
+            <Button
+                    android:text="6"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_6"/>
+            <Button
+                    android:text="-"
+                    style="@style/btn_operation"
+                    android:onClick="operationEvent"
+                    android:id="@+id/btn_minus"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button
+                    android:text="1"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_1"/>
+            <Button
+                    android:text="2"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_2"/>
+            <Button
+                    android:text="3"
+                    style="@style/btn_default_style"
+                    android:onClick="clickButtonEvent"
+                    android:id="@+id/btn_3"/>
+            <Button
+                    android:text="+"
+                    style="@style/btn_operation"
+                    android:onClick="operationEvent"
+                    android:id="@+id/btn_plus"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="0"
+                style="@style/btn_zero_style"
+                android:onClick="clickButtonEvent"
+                android:id="@+id/btn_zero"/>
+        <Button
+                android:text="."
+                style="@style/btn_default_style"
+                android:onClick="clickButtonEvent"
+                android:id="@+id/btn_dot"/>
+        <Button
+                android:text="="
+                style="@style/btn_operation"
+                android:onClick="equalEvent"
+                android:id="@+id/btn_equal"/>
+    </LinearLayout>
+</LinearLayout>
